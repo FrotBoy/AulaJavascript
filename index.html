@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+</head>
+
+<body>
+	<script>
+
+		var idade = 30;
+		document.write("Esta é uma variavel:  " + idade );
+
+	</script>
+
+	
+
+</br>
+</br>
+</br>
+
+
+	<script>
+		var txt = 'Texto teste';
+		document.write(txt);
+		document.write(Date());
+
+	</script>
+</br>
+</br>
+</br>
+
+	<script>
+		var n = 5;
+		if(n > 5){
+			console.log('primeira condição verdadeira');
+		}
+		else if(n == 5){
+			console.log('segunda condição verdadeira');
+		}
+		else{
+			console.log('terceira condicao falsa');
+		}
+	</script>
+
+</br>
+</br>
+</br>
+
+	<script>
+		var diasemana = new Date().getDay();
+		document.write(diasemana);
+
+		switch(diasemana){
+			case 4:
+				document.write('hoje é quinta feira');
+				break;
+			case 5:
+				document.write('hoje é sexta');
+				break;
+		}
+	</script>
+
+</br>
+</br>
+</br>
+
+	<script>
+		var idiomas = ['ingles', 'italiano', 'frances', 'alemão', 'russo'];
+		for(i = 0; i < idiomas.length; i++){
+			document.write(idiomas[i]);
+			console.log(idiomas[i]);
+		}
+	</script>
+
+</br>
+</br>
+</br>
+
+	<script>
+		var contador = 0;
+		var idiomas = ['ingles', 'italiano', 'frances', 'alemão', 'russo'];
+			while(contador < 10){ // pode ser tbm idiomas.lenght mas dá looping infinito
+				document.write(idiomas[contador]);
+				contador++;
+			}
+	</script>
+
+
+<hr>
+
+<p>	Informe um numero qualquer </p>
+<input type="text" id="numero">  
+<button onclick="verifica()">Verifica</button>
+<p id="msg"></p>
+</input>
+		<script>
+			function verifica(){
+			var x = document.getElementById('numero').value;
+			try{
+				if( x == '')throw 'informe um valor';
+				if(isNaN(x))throw 'informe um numero';
+				x = Number(x);
+				 if(x < 10) throw 'O numero é menor que 10';
+				 if(x > 20) throw 'O numero é maior que 20';
+				 document.getElementById('msg').innerHTML = 'valor correto:' ;
+			} catch(erro){
+				 document.getElementById('msg').innerHTML = 'erro:' +erro;
+			}
+		}
+		</script>
+
+
+
+</br>
+</br>
+</br>
+
+<h1 onclick="this.innerHTML = 'obrigado'">Clique aqui</h1>
+
+</br>
+</br>
+</br>
+
+<hr>
+
+<h2 id="demo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mouse aqui </h2>
+
+	<script>
+		function funcao1(elemento){
+			elemento.innerHTML = 	'OK, mouse sobre elemento';	
+		}
+		function funcao2(elemento){
+			elemento.innerHTML = 	'Passe o mouse here';	
+		}
+	</script>
+
+
+
+
+
+</body>
+</html>
+
+
+

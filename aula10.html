@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Aula 10</title>
+    	<style type="text/css">
+    	.zebra{
+    		background: silver;
+    	}
+    	</style>
+</head>
+
+<body>
+		<table class="zebra"> 
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Fone</th>
+				</tr>
+			</thead>
+				<tbody>
+					<tr>
+						<th>Astrogildo</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+					<tr>
+						<th>Matilde</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+					<tr>
+						<th>Gorete</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+					<tr>
+						<th>Defa</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+					<tr>
+						<th>Bernardete</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+					<tr>
+						<th>Josafá</th>
+						<th>0XX00 00000-0000</th>
+					</tr>
+				</tbody>	
+
+		</table>
+
+<script>
+	window.onload=function(){
+		var zebrar = document.querySelectorAll('.zebra tbody tr');
+		for (var i=0; i<zebrar.length; i+=2){
+			zebrar[i].className = 'zebra'; //nao funcionou esse bloco
+		}
+	}
+</script>	
+
+</body>
+</html>	
